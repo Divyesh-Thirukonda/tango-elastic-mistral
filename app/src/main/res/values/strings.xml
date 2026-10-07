@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Tango</string>
+    <string name="accessibility_description">Tango can read screen text, take screenshots, and tap, type, or swipe in other apps when you ask it to. Screen content is sent to your selected AI provider. Password screens pause the agent. Stop at any time from its floating control or notification. Enable only if you consent to this access.</string>
+</resources>
