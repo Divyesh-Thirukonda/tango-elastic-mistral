@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 128 128" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Tango app icon</title>
+  <desc id="desc">A paired ochre and periwinkle T on an ink field.</desc>
+  <defs>
+    <path id="t" d="M26 28H102V46H75V100H53V46H26Z"/>
+    <clipPath id="t-clip"><use href="#t"/></clipPath>
+    <mask id="seam" maskUnits="userSpaceOnUse" x="0" y="0" width="128" height="128">
+      <rect width="128" height="128" fill="white"/>
+      <path d="M64 28V46C72 52 72 64 64 73C56 82 56 94 64 100" stroke="black" stroke-width="2"/>
+    </mask>
+  </defs>
+  <rect width="128" height="128" fill="#12151C"/>
+  <g clip-path="url(#t-clip)" mask="url(#seam)">
+    <use href="#t" fill="#A7B8FF"/>
+    <path d="M0 0H64V46C72 52 72 64 64 73C56 82 56 94 64 100V128H0Z" fill="#F4B860"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+Tool: built-in image_gen
+Edit target: render of app/src/main/res/drawable/ic_tango.xml
+
+Use case: precise-object-edit
+Asset type: Tango Android app launcher icon, square 1024 by 1024.
+Input image 1 is the edit target: the existing black square with the white block-capital T.
+Primary request: make only the T textured like natural pale gray stone.
+Materials/textures: softly weathered limestone, fine visible mineral grain, tiny darker pores, irregular cloudy light-gray tonal variation, a few very subtle natural fissures. It must clearly read as tactile stone while staying bright and recognizable at small app-icon sizes. Restrained shallow surface relief from soft upper-left lighting.
+Constraints: preserve the exact original T silhouette, its straight edges, squared corners, width, stem width, centered placement and scale. Preserve the flat pure-black #000000 background. This is a flat front view of the same icon. Texture only inside the T. No new border, no rounded icon container, no extra text, no objects, no perspective, no extrusion, no surrounding stones, no shadow on the background. The crossbar is x=11 to 37 and y=12 to 19 and the stem is x=20 to 28 and y=19 to 37 in a 48-unit square.

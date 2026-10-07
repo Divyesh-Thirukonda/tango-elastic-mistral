@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Tango paired T, paper</title>
+  <desc id="desc">The Tango T in warm paper, with a transparent curved seam.</desc>
+  <defs>
+    <mask id="seam" maskUnits="userSpaceOnUse" x="0" y="0" width="128" height="128">
+      <rect width="128" height="128" fill="white"/>
+      <path d="M64 28V46C72 52 72 64 64 73C56 82 56 94 64 100" stroke="black" stroke-width="2"/>
+    </mask>
+  </defs>
+  <path d="M26 28H102V46H75V100H53V46H26Z" fill="#F4F0E8" mask="url(#seam)"/>
+</svg>

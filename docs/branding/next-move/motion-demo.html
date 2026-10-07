@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tango - motion study</title>
+<style>
+@font-face{font-family:Rubik;src:url('fonts/Rubik-Regular.ttf')}@font-face{font-family:Rubik;src:url('fonts/Rubik-Bold.ttf');font-weight:700}@font-face{font-family:Plex;src:url('fonts/IBMPlexMono-Regular.ttf')}
+:root{color-scheme:dark;--ink:#12151C;--paper:#F4F0E8;--sun:#F4B860;--moon:#A7B8FF;--surface:#292E39}
+*{box-sizing:border-box}body{margin:0;background:var(--ink);color:var(--paper);font-family:Rubik,system-ui,sans-serif}main{max-width:980px;margin:auto;padding:42px 34px}header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--surface);padding-bottom:25px}.name{font-size:30px;font-weight:700;letter-spacing:-1px}.label{font:11px Plex,monospace;letter-spacing:.08em;color:#B9BDC8}h1{font-size:clamp(38px,7vw,68px);line-height:1.04;letter-spacing:-.04em;margin:54px 0 16px}p{max-width:630px;font-size:17px;line-height:1.5;color:#B9BDC8}.study{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px;padding:20px 0}.mark{width:min(100%,320px);display:block;margin:auto}.controls{display:flex;gap:8px;flex-wrap:wrap}.controls button{background:transparent;border:1px solid #555B66;border-radius:8px;color:var(--paper);padding:12px 15px;font:14px Rubik;cursor:pointer}.controls button[aria-pressed="true"]{background:var(--paper);color:var(--ink);border-color:var(--paper)}button:focus-visible{outline:3px solid var(--moon);outline-offset:3px}.status{font-family:Plex;font-size:13px;margin:28px 0 10px;color:var(--moon)}.copy{min-height:75px}footer{border-top:1px solid var(--surface);margin-top:34px;padding-top:22px;font:11px Plex;line-height:1.7;color:#B9BDC8}.warm,.cool{transition:opacity 160ms}.mark[data-state="observe"] .warm{opacity:.6}.mark[data-state="act"] .cool{opacity:.6}.mark[data-state="observe"] .cool{animation:respond 400ms cubic-bezier(.2,0,0,1)}.mark[data-state="act"] .warm{animation:step 400ms cubic-bezier(.2,0,0,1)}@keyframes respond{30%{transform:translateY(-2px)}100%{transform:translateY(0)}}@keyframes step{30%{transform:translateY(2px)}100%{transform:translateY(0)}}@media(prefers-reduced-motion:reduce){.warm,.cool{transition:none!important;animation:none!important}}@media(max-width:600px){main{padding:28px 22px}.study{grid-template-columns:1fr;gap:8px}.mark{width:240px}header .label{font-size:10px}}
+.mark[data-state="paused"] .warm,.mark[data-state="paused"] .cool{transition:none}
+</style>
+</head>
+<body>
+<main id="tango-motion">
+<header><span class="name">tango</span><span class="label">MOTION STUDY / 01</span></header>
+<h1>Your intent.<br>In motion.</h1>
+<p>Two complementary forms, one shared rhythm. Select a state to see how the brand responds.</p>
+<div class="study">
+<svg class="mark" data-state="paused" viewBox="0 0 128 128" role="img" aria-label="Tango paired T mark">
+<defs><path id="outer-t" d="M26 28H102V46H75V100H53V46H26Z"/><clipPath id="outer-clip"><use href="#outer-t"/></clipPath><mask id="s-seam" x="0" y="0" width="128" height="128" maskUnits="userSpaceOnUse"><rect width="128" height="128" fill="white"/><path d="M64 28V46C72 52 72 64 64 73C56 82 56 94 64 100" fill="none" stroke="black" stroke-width="2"/></mask></defs>
+<g clip-path="url(#outer-clip)" mask="url(#s-seam)"><path class="cool" d="M64 0H128V128H64V100C56 94 56 82 64 73C72 64 72 52 64 46Z" fill="#A7B8FF"/><path class="warm" d="M0 0H64V46C72 52 72 64 64 73C56 82 56 94 64 100V128H0Z" fill="#F4B860"/></g></svg>
+<div><div class="controls" aria-label="Brand motion states"><button type="button" data-state="observe" aria-pressed="false">Observe</button><button type="button" data-state="act" aria-pressed="false">Act</button><button type="button" data-state="verify" aria-pressed="false">Verify</button><button type="button" data-state="paused" aria-pressed="true">Paused</button></div><div aria-live="polite"><div class="status">PAUSED</div><p class="copy">Paused. Continue when you are ready.</p></div></div>
+</div>
+<footer>160 ms response / 240 ms transition / 400 ms cycle.<br>Reduced motion uses static states. This study demonstrates identity behavior; it is separate from the Android app.</footer>
+</main>
+<script>
+(()=>{const root=document.getElementById('tango-motion');const mark=root.querySelector('.mark');const status=root.querySelector('.status');const copy=root.querySelector('.copy');const states={observe:['CHECKING THE SCREEN','Checking what is on screen.'],act:['TAKING THE NEXT STEP','Found it. Opening the details.'],verify:['CHECKING THE RESULT','The screen changed. Checking again.'],paused:['PAUSED','Paused. Continue when you are ready.']};root.querySelectorAll('button[data-state]').forEach(button=>button.addEventListener('click',()=>{const key=button.dataset.state;mark.dataset.state=key;status.textContent=states[key][0];copy.textContent=states[key][1];status.style.color=key==='act'?'var(--sun)':'var(--moon)';root.querySelectorAll('button[data-state]').forEach(other=>other.setAttribute('aria-pressed',String(other===button)));}));})();
+</script>
+</body>
+</html>
