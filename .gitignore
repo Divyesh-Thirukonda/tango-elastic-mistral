@@ -1,0 +1,14 @@
+.gradle/
+**/build/
+tools/
+local.properties
+bridge/.state/
+*.keystore
+*.jks
+.DS_Store
+**/node_modules/
+**/__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example

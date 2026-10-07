@@ -1,0 +1,20 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.tango.phone'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'com.tango.phone'
+        minSdk 30
+        targetSdk 35
+        versionCode 11
+        versionName '0.6.1'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    buildTypes {
+        release { minifyEnabled false }
+    }
+}

@@ -1,0 +1,6 @@
+ChatGPT sign-in logo
+
+The drawable app/src/main/res/drawable/ic_chatgpt.xml reproduces the official OpenAI sign-in asset published at:
+https://developers.openai.com/assets/siwc/sign-in-buttons/chatgpt-logo-black.svg
+
+This branding asset and OpenAI trademarks retain their respective rights and are not relicensed under Tango's MIT license. The MIT license covers Tango's original code. Tango is an independent prototype.
