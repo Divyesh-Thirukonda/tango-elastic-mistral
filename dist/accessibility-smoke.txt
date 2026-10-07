@@ -1,0 +1,3 @@
+INSTRUMENTATION_RESULT: checks={"duplicateSendBlocked":true,"coordinateSendBlocked":true,"followupSendScope":true,"invalidCoordinateRejected":true,"missingTaskTicketRejected":true,"settingsNodes":27,"screenshot":"576x1280","nodeTap":true,"staleTargetRejected":true,"globalBack":true,"textInput":true,"passwordRedacted":true,"passwordScreenshotWithheld":true,"pausedTaskRejected":true}
+INSTRUMENTATION_RESULT: success=true
+INSTRUMENTATION_CODE: 0

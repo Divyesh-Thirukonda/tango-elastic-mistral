@@ -1,0 +1,3 @@
+INSTRUMENTATION_RESULT: observationBenchmark={"samples":[{"elapsedMs":88,"screenshotCaptured":true,"error":""},{"elapsedMs":5,"screenshotCaptured":false,"error":"Android screenshot error 3 (secure windows cannot be captured; wait briefly and observe again)."},{"elapsedMs":4,"screenshotCaptured":false,"error":"Android screenshot error 3 (secure windows cannot be captured; wait briefly and observe again)."},{"elapsedMs":3,"screenshotCaptured":false,"error":"Android screenshot error 3 (secure windows cannot be captured; wait briefly and observe again)."}],"captured":1,"rateLimited":3,"missingImages":3,"liveInferenceRequests":0}
+INSTRUMENTATION_RESULT: success=true
+INSTRUMENTATION_CODE: 0

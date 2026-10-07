@@ -1,0 +1,26 @@
+{
+  "source": "auth-smoke-0.6.1.txt",
+  "success": true,
+  "checks": {
+    "autonomyEightUnchangedStepsRecoverWithoutHumanAsk": true,
+    "autonomyFiveFailedActionsRecoverWithoutHumanAsk": true,
+    "autonomyRoutineModelAskReconsideredWithoutWaiting": true,
+    "autonomyContextualContactQuestionReconsideredBeforeInterrupting": true,
+    "autonomyContinueBindsPersistedQuestionAcrossServiceRestart": true,
+    "autonomyRephrasedConfirmationReconsideredWithoutRepeatedHandoff": true,
+    "autonomyLegacyPendingQuestionMigratesOnContinue": true,
+    "autonomyMissingRequiredFactWaitsForHuman": true,
+    "autonomyRequiredFactResumeCompletes": true,
+    "autonomyRequiredFactMetadataOverridesRoutinePhrasing": true,
+    "autonomyUnknownLegacyAskConservativelyWaits": true,
+    "autonomyRoutineReconsiderationHasFiniteBudget": true,
+    "autonomyHumanEditingDropsDelayedAction": true,
+    "autonomyReleasedInputGetsFreshDecisionWithoutReplayingAction": true,
+    "autonomyPasswordAskUsesCanonicalInAppHandoff": true,
+    "autonomyVerificationCodeAskUsesCanonicalInAppHandoff": true,
+    "autonomyDraftSendTargetAndCoordinatesBlocked": true,
+    "autonomyExplicitLaterSendAuthorizationPreserved": true
+  },
+  "liveInferenceRequests": 0,
+  "note": "Native service with intercepted provider fixtures; tests plumbing and recovery, not live WhatsApp contact identification."
+}

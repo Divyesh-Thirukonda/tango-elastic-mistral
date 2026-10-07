@@ -1,0 +1,1 @@
+{"checks":37,"sliderAffectsRequest":true,"advertisedEffortsOnly":true,"status":"passed","liveInferenceRequests":0}

@@ -1,0 +1,129 @@
+{
+  "environment": "Same Android API35 emulator-5580; stable native Settings surface; production AgentService and PhoneController with local completed-response HTTPS fixtures",
+  "measurement": "One measured run per APK, including native task submission and local fixture replies. No live OpenAI inference, user account, or paid model quota. These are local harness timings, not a prediction for Cornell workflows or live inference.",
+  "baseline": {
+    "apkSha256": "883be78a7da204a63603f8c340644953aeb27ac3e0b4b445cd32758c2255c6ce",
+    "passed": 161,
+    "failed": 0,
+    "timingsMs": {
+      "observeMedianMs": 3,
+      "eightWaitsToDoneMs": 4288,
+      "fiveFailedControlsToDoneMs": 5317,
+      "routineAskToDoneMs": 1662
+    },
+    "captureQuality": {
+      "samples": [
+        {
+          "elapsedMs": 88,
+          "screenshotCaptured": true,
+          "error": ""
+        },
+        {
+          "elapsedMs": 5,
+          "screenshotCaptured": false,
+          "error": "Android screenshot error 3 (secure windows cannot be captured; wait briefly and observe again)."
+        },
+        {
+          "elapsedMs": 4,
+          "screenshotCaptured": false,
+          "error": "Android screenshot error 3 (secure windows cannot be captured; wait briefly and observe again)."
+        },
+        {
+          "elapsedMs": 3,
+          "screenshotCaptured": false,
+          "error": "Android screenshot error 3 (secure windows cannot be captured; wait briefly and observe again)."
+        }
+      ],
+      "captured": 1,
+      "rateLimited": 3,
+      "missingImages": 3,
+      "liveInferenceRequests": 0
+    }
+  },
+  "final": {
+    "apkSha256": "e0e630e4b7f60bd577f07daa88507ceb3ce23581cd1bbd5b58c3e9ed19b4503d",
+    "passed": 167,
+    "failed": 0,
+    "timingsMs": {
+      "observeMedianMs": 364,
+      "eightWaitsToDoneMs": 4095,
+      "fiveFailedControlsToDoneMs": 2987,
+      "routineAskToDoneMs": 1466
+    },
+    "voiceTimingsMs": {
+      "autoRunSubmission": 1049
+    },
+    "captureQuality": {
+      "samples": [
+        {
+          "elapsedMs": 94,
+          "screenshotCaptured": true,
+          "error": ""
+        },
+        {
+          "elapsedMs": 360,
+          "screenshotCaptured": true,
+          "error": ""
+        },
+        {
+          "elapsedMs": 341,
+          "screenshotCaptured": true,
+          "error": ""
+        },
+        {
+          "elapsedMs": 365,
+          "screenshotCaptured": true,
+          "error": ""
+        }
+      ],
+      "captured": 4,
+      "rateLimited": 0,
+      "missingImages": 0,
+      "liveInferenceRequests": 0
+    },
+    "counts": {
+      "offlineWireInferenceRequests": 36,
+      "offlineDirectPhoneRequests": 4,
+      "offlineAutonomyInferenceRequests": 31,
+      "offlineVoiceInferenceRequests": 1,
+      "offlineAuthHttpsRequests": 41,
+      "offlineTotalHttpsRequests": 115,
+      "offlineModelCatalogRequests": 2,
+      "offlineTokenExchanges": 13
+    }
+  },
+  "matchedRoutineComparison": [
+    {
+      "case": "eightWaitsToDoneMs",
+      "baselineMs": 4288,
+      "finalMs": 4095,
+      "reductionMs": 193,
+      "reductionPercent": 4.5
+    },
+    {
+      "case": "fiveFailedControlsToDoneMs",
+      "baselineMs": 5317,
+      "finalMs": 2987,
+      "reductionMs": 2330,
+      "reductionPercent": 43.8
+    },
+    {
+      "case": "routineAskToDoneMs",
+      "baselineMs": 1662,
+      "finalMs": 1466,
+      "reductionMs": 196,
+      "reductionPercent": 11.8
+    }
+  ],
+  "captureQualityCaveat": "The baseline rapid-observe median of 3 ms included failed native screenshot requests (Android error3: interval too short); only 1/4 focused reads captured an image. It must not be compared as a capture-speed improvement. The final controller intentionally waits for the screenshot interval and keeps a fresh frame on every decision.",
+  "voiceCaveat": "Synthetic transcript delivered to the actual RecognitionListener.onResults callback; no microphone recording or real speech-recognition latency measured.",
+  "uiCaptures": [
+    "dist/tango-ui-signedout.png",
+    "dist/tango-ui-idle.png",
+    "dist/tango-ui-running.png",
+    "dist/tango-ui-waiting.png",
+    "dist/tango-ui-paused.png",
+    "dist/tango-ui-done.png",
+    "dist/tango-ui-account.png"
+  ]
+}

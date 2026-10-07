@@ -1,0 +1,20 @@
+{
+  "passed": 161,
+  "failed": 0,
+  "timingsMs": {
+    "observeMedianMs": 3,
+    "eightWaitsToDoneMs": 4288,
+    "fiveFailedControlsToDoneMs": 5317,
+    "routineAskToDoneMs": 1662
+  },
+  "counts": {
+    "offlineWireInferenceRequests": 36,
+    "offlineDirectPhoneRequests": 4,
+    "offlineAutonomyInferenceRequests": 29,
+    "offlineAuthHttpsRequests": 41,
+    "offlineTotalHttpsRequests": 112,
+    "offlineModelCatalogRequests": 2,
+    "offlineTokenExchanges": 13
+  },
+  "baselineApkSha256": "883be78a7da204a63603f8c340644953aeb27ac3e0b4b445cd32758c2255c6ce"
+}

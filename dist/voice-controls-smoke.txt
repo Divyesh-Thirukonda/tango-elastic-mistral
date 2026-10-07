@@ -1,0 +1,23 @@
+Voice assertions extracted from the passing full native Tango 0.6.0 run. Synthetic callbacks only; no microphone capture.
+{
+  "source": "auth-smoke-0.6.0.txt",
+  "success": true,
+  "checks": {
+    "voiceAssistIntentMicGated": true,
+    "voiceRecordingShowsSquareWithoutSecondTap": true,
+    "voiceSingleStopTapShowsTranscribing": true,
+    "voiceFinalTranscriptSurvivesStop": true,
+    "voiceStaleCallbacksCannotChangeComposer": true,
+    "voiceStoppedFallbackDoesNotRestartMicrophone": true,
+    "voiceDuplicateLaunchDoesNotRestartRecording": true,
+    "voiceControlChecksUseNoMicrophone": true,
+    "voiceEditFocusCancelsAutoRun": true,
+    "voiceAutoRunPreferenceCanDisableCountdown": true,
+    "voiceOneSecondAutoRunSubmitsNativeTask": true,
+    "voiceTimingsMs": {
+      "autoRunSubmission": 1053
+    },
+    "voiceSyntheticResultCompletesNativeTask": true,
+    "offlineVoiceInferenceRequests": 1
+  }
+}

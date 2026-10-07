@@ -1,0 +1,26 @@
+{
+  "provider": "intercepted fixtures, no live OpenAI requests",
+  "simulatedProviderDelayMs": 300,
+  "actionsPerTask": 3,
+  "repetitions": 4,
+  "fastIRequestsPerTask": 2,
+  "fastIIRequestsPerTask": 4,
+  "fastITotalMs": [
+    3154,
+    3080,
+    3074,
+    3290
+  ],
+  "fastIITotalMs": [
+    3773,
+    3959,
+    4025,
+    3852
+  ],
+  "fastIMedianMs": 3117.0,
+  "fastIIMedianMs": 3905.5,
+  "reductionPercent": 20.2,
+  "selected": "Fast I",
+  "selectionBasis": "Native Android fixture measurements only; live model latency and decision quality not benchmarked.",
+  "apkSha256": "5b28d043234ef1257ae1e133831ad0ac053a01e072376fa20aa6b42556689a1a"
+}

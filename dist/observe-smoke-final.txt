@@ -1,0 +1,3 @@
+INSTRUMENTATION_RESULT: observationBenchmark={"samples":[{"elapsedMs":94,"screenshotCaptured":true,"error":""},{"elapsedMs":360,"screenshotCaptured":true,"error":""},{"elapsedMs":341,"screenshotCaptured":true,"error":""},{"elapsedMs":365,"screenshotCaptured":true,"error":""}],"captured":4,"rateLimited":0,"missingImages":0,"liveInferenceRequests":0}
+INSTRUMENTATION_RESULT: success=true
+INSTRUMENTATION_CODE: 0

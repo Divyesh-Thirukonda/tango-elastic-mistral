@@ -1,0 +1,3 @@
+INSTRUMENTATION_RESULT: checks={"signedOutCannotConnect":true,"realLoopbackTokenAndOriginChecks":true,"statusThreadsAndObservationUseNoInference":true,"remotePromptForegroundHandoffAndDurableJournal":true,"remoteNewThreadPreservesOutgoingDraft":true,"remoteSteerFollowUpPauseResponseStop":true,"staleControlsCannotAffectAnotherThread":true,"remoteStopCancelsLateActionsAndRunningThreadConflict":true,"accountChangeRevokesAccess":true,"reconnectRotatesToken":true,"disconnectClosesListener":true}
+INSTRUMENTATION_RESULT: success=true
+INSTRUMENTATION_CODE: 0

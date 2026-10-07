@@ -1,0 +1,20 @@
+{
+  "provider": "intercepted fixtures, no live OpenAI requests",
+  "simulatedProviderDelayMs": 300,
+  "actionsPerTask": 3,
+  "repetitions": 4,
+  "fastIRequestsPerTask": 2,
+  "fastIIRequestsPerTask": 4,
+  "fastITotalMs": [
+    3074,
+    3022,
+    3028,
+    3433
+  ],
+  "fastIITotalMs": [
+    3968,
+    4212,
+    4159,
+    4232
+  ]
+}
