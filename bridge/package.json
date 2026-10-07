@@ -1,0 +1,13 @@
+{
+  "name": "tango-phone-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Authenticated local Codex companion for the Tango Android agent",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check:codex": "node check-codex.mjs"
+  }
+}
